@@ -1,0 +1,10 @@
+f=imread（'selfie.jpg'）；f1=imread（'van.jpg'）；g1=imhist（f1）；%画出直方图
+z2=histea（f，g1）；
+%直方图规定化
+subplot（2，2，1）；
+imshow（f）；title'原图像’）；
+subp1ot（2，2，3）；imshow（f1）；title（’匹配图像’）；
+subp1ot（2，2，4）；imshow（z2）；title’匹配后图像’）；
+%subplot（2，2，1）；imhist（f）；title’原图像直方图’）；
+%subp1ot（2，2，3）；imhist（f1）；title（’匹配图像直方图’）；
+%subplot（2，2，4）；imhist（z2）；title（’匹配后图像直方图’）；
